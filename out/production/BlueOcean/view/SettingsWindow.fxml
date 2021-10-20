@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="contextSettings" prefHeight="367.0" prefWidth="478.0" style="-fx-background-color: WHITE;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.SettingsWindowController">
+   <children>
+      <AnchorPane prefHeight="50.0" prefWidth="480.0" style="-fx-background-color: #B1EBE4;">
+         <children>
+            <ImageView fitHeight="31.0" fitWidth="45.0" layoutX="14.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/smalllo.jpg" />
+               </image>
+            </ImageView>
+            <Label layoutX="65.0" layoutY="9.0" text="SETTINGS">
+               <font>
+                  <Font name="Calibri" size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="65.0" layoutY="27.0" text="BLUE OCEAN RECERVATION SYSTEM">
+               <font>
+                  <Font name="Calibri" size="12.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <JFXButton buttonType="RAISED" layoutX="69.0" layoutY="119.0" onAction="#addUsers" prefHeight="65.0" prefWidth="342.0" style="-fx-background-color: #45D6C5; -fx-background-radius: 1EM;" text="ADD USERS" textFill="WHITE">
+         <font>
+            <Font name="Calibri Bold" size="16.0" />
+         </font></JFXButton>
+      <JFXButton buttonType="RAISED" layoutX="69.0" layoutY="218.0" onAction="#openAllUsersTable" prefHeight="65.0" prefWidth="342.0" style="-fx-background-color: #45D6C5; -fx-background-radius: 1EM;" text="VIEW USERS" textFill="WHITE">
+         <font>
+            <Font name="Candara Bold" size="16.0" />
+         </font></JFXButton>
+   </children>
+</AnchorPane>

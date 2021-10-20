@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="contextGuest" prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: linear-gradient(#35d3c0, #8AF5FC);" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.GuestDataController">
+   <children>
+      <AnchorPane layoutX="23.0" layoutY="86.0" prefHeight="469.0" prefWidth="752.0" style="-fx-background-color: white; -fx-background-radius: 2em;">
+         <children>
+            <JFXTextField fx:id="txtName" focusColor="#0cc0ab" labelFloat="true" layoutX="198.0" layoutY="51.0" opacity="0.65" prefHeight="44.0" prefWidth="370.0" promptText="Name" style="-fx-background-color: #b9fff6; -fx-background-radius: 1em;" unFocusColor="#b9fff6">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </JFXTextField>
+            <JFXTextField fx:id="txtContact" focusColor="#0cc0ab" labelFloat="true" layoutX="198.0" layoutY="116.0" opacity="0.65" prefHeight="44.0" prefWidth="370.0" promptText="Contact Number" style="-fx-background-color: #b9fff6; -fx-background-radius: 1em;" unFocusColor="#b9fff6">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </JFXTextField>
+            <JFXTextField fx:id="txtEmail" focusColor="#0cc0ab" labelFloat="true" layoutX="198.0" layoutY="178.0" opacity="0.65" prefHeight="44.0" prefWidth="370.0" promptText="Email" style="-fx-background-color: #b9fff6; -fx-background-radius: 1em;" unFocusColor="#b9fff6">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </JFXTextField>
+            <JFXTextField fx:id="txtAddress" focusColor="#0cc0ab" labelFloat="true" layoutX="198.0" layoutY="244.0" opacity="0.65" prefHeight="44.0" prefWidth="370.0" promptText="Address" style="-fx-background-color: #b9fff6; -fx-background-radius: 1em;" unFocusColor="#b9fff6">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </JFXTextField>
+            <JFXTextField fx:id="txtNic" focusColor="#0cc0ab" labelFloat="true" layoutX="199.0" layoutY="308.0" opacity="0.65" prefHeight="44.0" prefWidth="370.0" promptText="NIC" style="-fx-background-color: #b9fff6; -fx-background-radius: 1em;" unFocusColor="#b9fff6">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </JFXTextField>
+            <FontAwesomeIconView glyphName="USER" layoutX="166.0" layoutY="81.0" size="25" />
+            <FontAwesomeIconView glyphName="PHONE" layoutX="166.0" layoutY="146.0" size="25" />
+            <FontAwesomeIconView glyphName="ENVELOPE_ALT" layoutX="163.0" layoutY="208.0" size="25" />
+            <FontAwesomeIconView glyphName="SAFARI" layoutX="163.0" layoutY="274.0" size="25" />
+            <FontAwesomeIconView glyphName="CREDIT_CARD" layoutX="163.0" layoutY="338.0" size="25" />
+            <JFXButton layoutX="337.0" layoutY="386.0" onAction="#reserve" prefHeight="31.0" prefWidth="78.0" style="-fx-background-color: linear-gradient(to left,#0CC0AB, #8AF5FC); -fx-background-radius: 0.5em;" text="RRESERVE" />
+         </children>
+      </AnchorPane>
+      <Label layoutX="96.0" layoutY="16.0" prefHeight="36.0" prefWidth="239.0" text="GUEST DETAILS" textFill="WHITE">
+         <font>
+            <Font name="Baskerville Old Face" size="30.0" />
+         </font>
+      </Label>
+      <Label layoutX="96.0" layoutY="45.0" prefHeight="18.0" prefWidth="258.0" text="BLUE OCEAN RESERVETION SYSTEM" textFill="WHITE">
+         <font>
+            <Font name="Baskerville Old Face" size="14.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="51.0" fitWidth="67.0" layoutX="14.0" layoutY="18.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/smalllo.jpg" />
+         </image>
+      </ImageView>
+      <JFXButton buttonType="RAISED" layoutX="13.0" layoutY="564.0" onAction="#back" prefHeight="25.0" prefWidth="67.0" style="-fx-background-color: linear-gradient(to left,#0CC0AB, #8AF5FC); -fx-background-radius: 0.5em;" text="Back">
+         <graphic>
+            <FontAwesomeIconView glyphName="ANGLE_LEFT" />
+         </graphic>
+      </JFXButton>
+   </children>
+</AnchorPane>

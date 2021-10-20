@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXCheckBox?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+
+
+<StackPane fx:id="stckPane" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.LoginWindowController">
+   <children>
+      <AnchorPane fx:id="contextLogin" prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: linear-gradient(#0CC0AB, #8AF5FC);">
+         <children>
+            <AnchorPane layoutX="268.0" layoutY="38.0" prefHeight="524.0" prefWidth="502.0" style="-fx-background-color: white; -fx-background-radius: 2em;">
+               <children>
+                  <JFXTextField fx:id="txtusername" focusColor="#0cc0ab" labelFloat="true" layoutX="79.0" layoutY="171.0" opacity="0.65" prefHeight="44.0" prefWidth="370.0" promptText="Username" style="-fx-background-color: #b9fff6; -fx-background-radius: 1em;" unFocusColor="#b9fff6">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </JFXTextField>
+                  <FontAwesomeIconView glyphName="USER" layoutX="46.0" layoutY="202.0" size="25" />
+                  <FontAwesomeIconView glyphName="LOCK" layoutX="48.0" layoutY="282.0" size="25" />
+                  <JFXCheckBox checkedColor="#0dbca5" layoutX="64.0" layoutY="348.0" prefHeight="20.0" prefWidth="95.0" text="Remind me" unCheckedColor="#0dbca5">
+                     <font>
+                        <Font size="11.0" />
+                     </font>
+                  </JFXCheckBox>
+                  <Label layoutX="366.0" layoutY="350.0" text="Forgot password?">
+                     <font>
+                        <Font size="11.0" />
+                     </font>
+                  </Label>
+                  <JFXButton buttonType="RAISED" layoutX="43.0" layoutY="435.0" onAction="#openAdminWindow" prefHeight="44.0" prefWidth="174.0" style="-fx-background-color: linear-gradient(#0CC0AB, #8AF5FC); -fx-background-radius: 0.5em;" text="Log in as an Admin">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </JFXButton>
+                  <JFXButton buttonType="RAISED" layoutX="266.0" layoutY="435.0" onAction="#openReceptionWindow" prefHeight="44.0" prefWidth="200.0" style="-fx-background-color: linear-gradient(#0CC0AB, #8AF5FC); -fx-background-radius: 0.5em;" text="Log in as an Receptionist">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </JFXButton>
+                  <ImageView fitHeight="83.0" fitWidth="117.0" layoutX="194.0" layoutY="25.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../assets/smalllo.jpg" />
+                     </image>
+                  </ImageView>
+                  <JFXPasswordField fx:id="password" focusColor="#0cc0ab" labelFloat="true" layoutX="79.0" layoutY="252.0" opacity="0.65" prefHeight="44.0" prefWidth="370.0" promptText="Password" style="-fx-background-color: #b9fff6; -fx-background-radius: 1EM;" unFocusColor="#b9fff6">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </JFXPasswordField>
+               </children>
+            </AnchorPane>
+            <Label layoutX="62.0" layoutY="346.0" prefHeight="31.0" prefWidth="136.0" text="WELCOME" textFill="WHITE">
+               <font>
+                  <Font name="Baskerville Old Face" size="25.0" />
+               </font>
+            </Label>
+            <Label layoutX="17.0" layoutY="370.0" prefHeight="18.0" prefWidth="236.0" text="BLUE OCEAN RESERVETION SYSTEM" textFill="WHITE">
+               <font>
+                  <Font name="Baskerville Old Face" size="13.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="191.0" fitWidth="191.0" layoutX="34.0" layoutY="146.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/logo.jpg" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+   </children>
+</StackPane>

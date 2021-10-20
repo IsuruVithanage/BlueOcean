@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.UserTableController">
+   <children>
+      <TableView fx:id="usertbl" layoutX="8.0" layoutY="58.0" prefHeight="332.0" prefWidth="595.0" stylesheets="@../style/style.css">
+        <columns>
+          <TableColumn fx:id="coluserName" prefWidth="75.0" text="Username" />
+          <TableColumn fx:id="colemail" prefWidth="132.0" text="Email" />
+            <TableColumn fx:id="colpassword" prefWidth="109.0" text="Password" />
+            <TableColumn fx:id="colcontact" prefWidth="90.0" text="Contact" />
+            <TableColumn fx:id="colroll" prefWidth="91.0" text="Roll" />
+            <TableColumn fx:id="coldelete" prefWidth="97.0" text="Delete" />
+        </columns>
+      </TableView>
+      <AnchorPane prefHeight="50.0" prefWidth="610.0" style="-fx-background-color: #B1EBE4;">
+         <children>
+            <ImageView fitHeight="31.0" fitWidth="45.0" layoutX="14.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/smalllo.jpg" />
+               </image>
+            </ImageView>
+            <Label layoutX="65.0" layoutY="9.0" text="ALL USERS">
+               <font>
+                  <Font name="Calibri" size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="65.0" layoutY="27.0" text="BLUE OCEAN RECERVATION SYSTEM">
+               <font>
+                  <Font name="Calibri" size="12.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

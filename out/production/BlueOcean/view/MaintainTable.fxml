@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="600.0" prefWidth="643.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.MaintainTableController">
+   <children>
+      <AnchorPane layoutY="-1.0" prefHeight="50.0" prefWidth="643.0" style="-fx-background-color: #B1EBE4;">
+         <children>
+            <ImageView fitHeight="31.0" fitWidth="45.0" layoutX="14.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/smalllo.jpg" />
+               </image>
+            </ImageView>
+            <Label layoutX="65.0" layoutY="9.0" text="MAINTAINANCE">
+               <font>
+                  <Font name="Calibri" size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="65.0" layoutY="27.0" text="BLUE OCEAN RECERVATION SYSTEM">
+               <font>
+                  <Font name="Calibri" size="12.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <TableView fx:id="maintaintbl" layoutX="25.0" layoutY="63.0" prefHeight="518.0" prefWidth="587.0">
+        <columns>
+          <TableColumn fx:id="colNo" prefWidth="75.0" text="Room No" />
+          <TableColumn fx:id="colName" prefWidth="191.0" text="Name" />
+            <TableColumn fx:id="colContact" prefWidth="126.0" text="Contact" />
+            <TableColumn fx:id="colEmail" prefWidth="122.0" text="Email" />
+            <TableColumn fx:id="colDelet" prefWidth="72.0" text="Delete" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

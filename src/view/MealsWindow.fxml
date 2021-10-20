@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane fx:id="contextMeal" prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: linear-gradient(#35d3c0, #8AF5FC);" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.MealsWindowController">
+   <children>
+      <AnchorPane layoutX="23.0" layoutY="86.0" prefHeight="469.0" prefWidth="752.0" style="-fx-background-color: white; -fx-background-radius: 2em;">
+         <children>
+            <JFXButton buttonType="RAISED" layoutX="22.0" layoutY="29.0" onAction="#addNewMeal" prefHeight="39.0" prefWidth="218.0" style="-fx-background-color: #45D6C5; -fx-background-radius: 1em;" text="ADD NEW MEAL PACKAGE" textFill="WHITE">
+               <font>
+                  <Font name="Calibri Bold" size="15.0" />
+               </font>
+            </JFXButton>
+            <Label layoutX="216.0" layoutY="30.0" text="+" textFill="WHITE">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </Label>
+            <JFXButton buttonType="RAISED" layoutX="267.0" layoutY="31.0" onAction="#openAllMeal" prefHeight="39.0" prefWidth="218.0" style="-fx-background-color: #45D6C5; -fx-background-radius: 1em;" text="MODIFY MEAL PACKAGE" textFill="WHITE">
+               <font>
+                  <Font name="Calibri Bold" size="15.0" />
+               </font>
+            </JFXButton>
+            <JFXButton buttonType="RAISED" layoutX="516.0" layoutY="31.0" onAction="#openMealToDelete" prefHeight="39.0" prefWidth="218.0" style="-fx-background-color: #45D6C5; -fx-background-radius: 1em;" text="DELET MEAL PACKAGE" textFill="WHITE">
+               <font>
+                  <Font name="Calibri Bold" size="15.0" />
+               </font>
+            </JFXButton>
+            <FontAwesomeIconView fill="WHITE" glyphName="EDIT" layoutX="460.0" layoutY="58.0" size="18" />
+            <FontAwesomeIconView fill="WHITE" glyphName="TRASH_ALT" layoutX="704.0" layoutY="58.0" size="20" />
+            <ImageView fitHeight="131.0" fitWidth="176.0" layoutX="36.0" layoutY="104.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/italian.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="131.0" fitWidth="176.0" layoutX="288.0" layoutY="104.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/indian.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="131.0" fitWidth="176.0" layoutX="537.0" layoutY="104.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/chaineis.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="131.0" fitWidth="176.0" layoutX="37.0" layoutY="269.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/Salad.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="131.0" fitWidth="176.0" layoutX="296.0" layoutY="264.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/beverages.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="131.0" fitWidth="176.0" layoutX="538.0" layoutY="264.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/soups.jpg" />
+               </image>
+            </ImageView>
+            <JFXButton buttonType="RAISED" layoutX="79.0" layoutY="221.0" text="ITALIAN" textFill="#0dc0ab">
+               <font>
+                  <Font name="Baskerville Old Face" size="14.0" />
+               </font>
+            </JFXButton>
+            <JFXButton buttonType="RAISED" layoutX="340.0" layoutY="221.0" text="INDIAN" textFill="#0dc0ab">
+               <font>
+                  <Font name="Baskerville Old Face" size="14.0" />
+               </font>
+            </JFXButton>
+            <JFXButton buttonType="RAISED" layoutX="586.0" layoutY="221.0" text="CHINESE" textFill="#0dc0ab">
+               <font>
+                  <Font name="Baskerville Old Face" size="14.0" />
+               </font>
+            </JFXButton>
+            <JFXButton buttonType="RAISED" layoutX="86.0" layoutY="398.0" text="SALADS" textFill="#0dc0ab">
+               <font>
+                  <Font name="Baskerville Old Face" size="14.0" />
+               </font>
+            </JFXButton>
+            <JFXButton buttonType="RAISED" layoutX="328.0" layoutY="398.0" text="BEVERAGES" textFill="#0dc0ab">
+               <font>
+                  <Font name="Baskerville Old Face" size="14.0" />
+               </font>
+            </JFXButton>
+            <JFXButton buttonType="RAISED" layoutX="593.0" layoutY="398.0" text="SOUPS" textFill="#0dc0ab">
+               <font>
+                  <Font name="Baskerville Old Face" size="14.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </AnchorPane>
+      <Label layoutX="96.0" layoutY="21.0" prefHeight="31.0" prefWidth="233.0" text="MEALS" textFill="WHITE">
+         <font>
+            <Font name="Baskerville Old Face" size="25.0" />
+         </font>
+      </Label>
+      <Label layoutX="96.0" layoutY="45.0" prefHeight="18.0" prefWidth="258.0" text="BLUE OCEAN RESERVETION SYSTEM" textFill="WHITE">
+         <font>
+            <Font name="Baskerville Old Face" size="14.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="39.0" fitWidth="59.0" layoutX="23.0" layoutY="25.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/smalllo.jpg" />
+         </image>
+      </ImageView>
+      <JFXButton buttonType="RAISED" layoutX="12.0" layoutY="568.0" onAction="#back" prefHeight="25.0" prefWidth="81.0" style="-fx-background-color: linear-gradient(to left,#0CC0AB, #8AF5FC); -fx-background-radius: 0.5em;" text="Back">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>

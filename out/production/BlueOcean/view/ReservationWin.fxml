@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane fx:id="contextReser" prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: linear-gradient(#35d3c0, #8AF5FC);" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ReservationWinController">
+   <children>
+      <ImageView fitHeight="59.0" fitWidth="80.0" layoutX="11.0" layoutY="12.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/smalllo.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="106.0" layoutY="16.0" prefHeight="36.0" prefWidth="320.0" text="ROOM RESERVATION" textFill="WHITE">
+         <font>
+            <Font name="Baskerville Old Face" size="30.0" />
+         </font>
+      </Label>
+      <Label layoutX="106.0" layoutY="46.0" prefHeight="18.0" prefWidth="258.0" text="BLUE OCEAN RESERVETION SYSTEM" textFill="WHITE">
+         <font>
+            <Font name="Baskerville Old Face" size="14.0" />
+         </font>
+      </Label>
+      <AnchorPane layoutX="23.0" layoutY="77.0" prefHeight="486.0" prefWidth="752.0" style="-fx-background-color: white; -fx-background-radius: 2em;">
+         <children>
+            <JFXButton buttonType="RAISED" layoutX="37.0" layoutY="19.0" onAction="#addReservation" prefHeight="52.0" prefWidth="280.0" style="-fx-background-color: #45D6C5; -fx-background-radius: 1EM;" text="ADD  RESERVATION" textFill="WHITE">
+               <font>
+                  <Font name="Calibri Bold" size="16.0" />
+               </font>
+            </JFXButton>
+            <Label layoutX="250.0" layoutY="24.0" text="+" textFill="WHITE">
+               <font>
+                  <Font size="28.0" />
+               </font>
+            </Label>
+            <JFXButton buttonType="RAISED" layoutX="436.0" layoutY="25.0" onAction="#viewReservation" prefHeight="52.0" prefWidth="280.0" style="-fx-background-color: #45D6C5; -fx-background-radius: 1EM;" text="VIEW RESERVATION" textFill="WHITE">
+               <font>
+                  <Font name="Calibri Bold" size="16.0" />
+               </font>
+            </JFXButton>
+            <FontAwesomeIconView fill="WHITE" glyphName="TRIPADVISOR" layoutX="665.0" layoutY="56.0" size="17" />
+            <Label layoutX="326.0" layoutY="108.0" text="JULY 2021" textFill="#0dc0ab">
+               <font>
+                  <Font name="Calibri Bold" size="24.0" />
+               </font>
+            </Label>
+            <Label layoutX="79.0" layoutY="145.0" text="MON" textFill="#0dc0ab">
+               <font>
+                  <Font name="Calibri Bold" size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="180.0" layoutY="145.0" text="THE" textFill="#0dc0ab">
+               <font>
+                  <Font name="Calibri Bold" size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="269.0" layoutY="145.0" text="WED" textFill="#0dc0ab">
+               <font>
+                  <Font name="Calibri Bold" size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="356.0" layoutY="145.0" text="THU" textFill="#0dc0ab">
+               <font>
+                  <Font name="Calibri Bold" size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="455.0" layoutY="145.0" text="FRI" textFill="#0dc0ab">
+               <font>
+                  <Font name="Calibri Bold" size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="549.0" layoutY="145.0" text="SAT" textFill="#0dc0ab">
+               <font>
+                  <Font name="Calibri Bold" size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="639.0" layoutY="145.0" text="SUN" textFill="#0dc0ab">
+               <font>
+                  <Font name="Calibri Bold" size="15.0" />
+               </font>
+            </Label>
+            <JFXButton layoutX="326.0" layoutY="171.0" prefHeight="52.0" prefWidth="88.0" style="-fx-background-color: #B1EBE4; -fx-background-radius: 0.8EM;" text="01">
+               <font>
+                  <Font name="Calibri Bold" size="20.0" />
+               </font>
+            </JFXButton>
+            <JFXButton layoutX="421.0" layoutY="171.0" prefHeight="52.0" prefWidth="88.0" style="-fx-background-color: #B1EBE4; -fx-background-radius: 0.8EM;" text="02">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </JFXButton>
+            <JFXButton layoutX="516.0" layoutY="171.0" prefHeight="52.0" prefWidth="88.0" style="-fx-background-color: #0DC0AB; -fx-background-radius: 0.8EM;" text="03">
+               <font>
+                  <Font name="Calibri Bold" size="20.0" />
+               </font>
+            </JFXButton>
+            <JFXButton layoutX="611.0" layoutY="171.0" prefHeight="52.0" prefWidth="88.0" style="-fx-background-color: #0DC0AB; -fx-background-radius: 0.8EM;" text="04">
+               <font>
+                  <Font name="Calibri Bold" size="20.0" />
+               </font>
+            </JFXButton>
+            <JFXButton layoutX="327.0" layoutY="229.0" prefHeight="52.0" prefWidth="88.0" style="-fx-background-color: #B1EBE4; -fx-background-radius: 0.8EM;" text="08">
+               <font>
+                  <Font name="Calibri Bold" size="20.0" />
+               </font>
+            </JFXButton>
+            <JFXButton layoutX="422.0" layoutY="229.0" prefHeight="52.0" prefWidth="88.0" style="-fx-background-color: #B1EBE4; -fx-background-radius: 0.8EM;" text="09">
+               <font>
+                  <Font name="Calibri Bold" size="20.0" />
+               </font>
+            </JFXButton>
+            <JFXButton layoutX="516.0" layoutY="229.0" prefHeight="52.0" prefWidth="88.0" style="-fx-background-color: #0DC0AB; -fx-background-radius: 0.8EM;" text="10">
+               <font>
+                  <Font name="Calibri Bold" size="20.0" />
+               </font>
+            </JFXButton>
+            <JFXButton layoutX="611.0" layoutY="229.0" prefHeight="52.0" prefWidth="88.0" style="-fx-background-color: #0DC0AB; -fx-background-radius: 0.8EM;" text="11">
+               <font>
+                  <Font name="Calibri Bold" size="20.0" />
+               </font>
+            </JFXButton>
+            <JFXButton layoutX="328.0" layoutY="289.0" prefHeight="52.0" prefWidth="88.0" style="-fx-background-color: #B1EBE4; -fx-background-radius: 0.8EM;" text="15">
+               <font>
+                  <Font name="Calibri Bold" size="20.0" />
+               </font>
+            </JFXButton>
+            <JFXButton layoutX="422.0" layoutY="289.0" prefHeight="52.0" prefWidth="88.0" style="-fx-background-color: #0DC0AB; -fx-background-radius: 0.8EM;" text="16">
+               <font>
+                  <Font name="Calibri Bold" size="20.0" />
+               </font>
+            </JFXButton>
+            <JFXButton layoutX="517.0" layoutY="289.0" prefHeight="52.0" prefWidth="88.0" style="-fx-background-color: #0DC0AB; -fx-background-radius: 0.8EM;" text="17">
+               <font>
+                  <Font name="Calibri Bold" size="20.0" />
+               </font>
+            </JFXButton>
+            <JFXButton layoutX="612.0" layoutY="289.0" prefHeight="52.0" prefWidth="88.0" style="-fx-background-color: #0DC0AB; -fx-background-radius: 0.8EM;" text="18">
+               <font>
+                  <Font name="Calibri Bold" size="20.0" />
+               </font>
+            </JFXButton>
+            <JFXButton layoutX="328.0" layoutY="347.0" prefHeight="52.0" prefWidth="88.0" style="-fx-background-color: #B1EBE4; -fx-background-radius: 0.8EM;" text="22">
+               <font>
+                  <Font name="Calibri Bold" size="20.0" />
+               </font>
+            </JFXButton>
+            <JFXButton layoutX="422.0" layoutY="347.0" prefHeight="52.0" prefWidth="88.0" style="-fx-background-color: #B1EBE4; -fx-background-radius: 0.8EM;" text="23">
+               <font>
+                  <Font name="Calibri Bold" size="20.0" />
+               </font>
+            </JFXButton>
+            <JFXButton layoutX="516.0" layoutY="347.0" prefHeight="52.0" prefWidth="88.0" style="-fx-background-color: #0DC0AB; -fx-background-radius: 0.8EM;" text="24">
+               <font>
+                  <Font name="Calibri Bold" size="20.0" />
+               </font>
+            </JFXButton>
+            <JFXButton layoutX="613.0" layoutY="347.0" prefHeight="52.0" prefWidth="88.0" style="-fx-background-color: #0DC0AB; -fx-background-radius: 0.8EM;" text="25">
+               <font>
+                  <Font name="Calibri Bold" size="20.0" />
+               </font>
+            </JFXButton>
+            <JFXButton layoutX="329.0" layoutY="407.0" prefHeight="52.0" prefWidth="88.0" style="-fx-background-color: #B1EBE4; -fx-background-radius: 0.8EM;" text="29">
+               <font>
+                  <Font name="Calibri Bold" size="20.0" />
+               </font>
+            </JFXButton>
+            <JFXButton layoutX="423.0" layoutY="407.0" prefHeight="52.0" prefWidth="88.0" style="-fx-background-color: #0DC0AB; -fx-background-radius: 0.8EM;" text="30">
+               <font>
+                  <Font name="Calibri Bold" size="20.0" />
+               </font>
+            </JFXButton>
+            <JFXButton layoutX="516.0" layoutY="407.0" prefHeight="52.0" prefWidth="88.0" style="-fx-background-color: #0DC0AB; -fx-background-radius: 0.8EM;" text="31">
+               <font>
+                  <Font name="Calibri Bold" size="20.0" />
+               </font>
+            </JFXButton>
+            <JFXButton layoutX="46.0" layoutY="229.0" prefHeight="52.0" prefWidth="88.0" style="-fx-background-color: #0DC0AB; -fx-background-radius: 0.8EM;" text="05">
+               <font>
+                  <Font name="Calibri Bold" size="20.0" />
+               </font>
+            </JFXButton>
+            <JFXButton layoutX="140.0" layoutY="229.0" prefHeight="52.0" prefWidth="88.0" style="-fx-background-color: #0DC0AB; -fx-background-radius: 0.8EM;" text="06">
+               <font>
+                  <Font name="Calibri Bold" size="20.0" />
+               </font>
+            </JFXButton>
+            <JFXButton layoutX="235.0" layoutY="229.0" prefHeight="52.0" prefWidth="88.0" style="-fx-background-color: #0DC0AB; -fx-background-radius: 0.8EM;" text="07">
+               <font>
+                  <Font name="Calibri Bold" size="20.0" />
+               </font>
+            </JFXButton>
+            <JFXButton layoutX="46.0" layoutY="289.0" prefHeight="52.0" prefWidth="88.0" style="-fx-background-color: #B1EBE4; -fx-background-radius: 0.8EM;" text="12">
+               <font>
+                  <Font name="Calibri Bold" size="20.0" />
+               </font>
+            </JFXButton>
+            <JFXButton layoutX="141.0" layoutY="289.0" prefHeight="52.0" prefWidth="88.0" style="-fx-background-color: #B1EBE4; -fx-background-radius: 0.8EM;" text="13">
+               <font>
+                  <Font name="Calibri Bold" size="20.0" />
+               </font>
+            </JFXButton>
+            <JFXButton layoutX="236.0" layoutY="289.0" prefHeight="52.0" prefWidth="88.0" style="-fx-background-color: #0DC0AB; -fx-background-radius: 0.8EM;" text="14">
+               <font>
+                  <Font name="Calibri Bold" size="20.0" />
+               </font>
+            </JFXButton>
+            <JFXButton layoutX="46.0" layoutY="347.0" prefHeight="52.0" prefWidth="88.0" style="-fx-background-color: #0DC0AB; -fx-background-radius: 0.8EM;" text="19">
+               <font>
+                  <Font name="Calibri Bold" size="20.0" />
+               </font>
+            </JFXButton>
+            <JFXButton layoutX="140.0" layoutY="347.0" prefHeight="52.0" prefWidth="88.0" style="-fx-background-color: #0DC0AB; -fx-background-radius: 0.8EM;" text="20">
+               <font>
+                  <Font name="Calibri Bold" size="20.0" />
+               </font>
+            </JFXButton>
+            <JFXButton layoutX="237.0" layoutY="347.0" prefHeight="52.0" prefWidth="88.0" style="-fx-background-color: #B1EBE4; -fx-background-radius: 0.8EM;" text="21">
+               <font>
+                  <Font name="Calibri Bold" size="20.0" />
+               </font>
+            </JFXButton>
+            <JFXButton layoutX="47.0" layoutY="407.0" prefHeight="52.0" prefWidth="88.0" style="-fx-background-color: #B1EBE4; -fx-background-radius: 0.8EM;" text="26">
+               <font>
+                  <Font name="Calibri Bold" size="20.0" />
+               </font>
+            </JFXButton>
+            <JFXButton layoutX="140.0" layoutY="407.0" prefHeight="52.0" prefWidth="88.0" style="-fx-background-color: #B1EBE4; -fx-background-radius: 0.8EM;" text="27">
+               <font>
+                  <Font name="Calibri Bold" size="20.0" />
+               </font>
+            </JFXButton>
+            <JFXButton layoutX="238.0" layoutY="407.0" prefHeight="52.0" prefWidth="88.0" style="-fx-background-color: #B1EBE4; -fx-background-radius: 0.8EM;" text="28">
+               <font>
+                  <Font name="Calibri Bold" size="20.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </AnchorPane>
+      <JFXButton buttonType="RAISED" layoutX="13.0" layoutY="568.0" onAction="#back" prefHeight="20.0" prefWidth="67.0" style="-fx-background-color: linear-gradient(to left,#0CC0AB, #8AF5FC); -fx-background-radius: 0.5em;" text="Back">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </JFXButton>
+      <FontAwesomeIconView glyphName="ANGLE_LEFT" layoutX="23.0" layoutY="587.0" size="20" />
+   </children>
+</AnchorPane>

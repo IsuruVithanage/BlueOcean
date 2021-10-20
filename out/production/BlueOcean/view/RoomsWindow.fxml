@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="contextRoom" prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: linear-gradient(#35d3c0, #8AF5FC);" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.RoomsWindowController">
+   <children>
+      <AnchorPane layoutX="24.0" layoutY="76.0" prefHeight="469.0" prefWidth="752.0" style="-fx-background-color: white; -fx-background-radius: 2em;">
+         <children>
+            <JFXButton buttonType="RAISED" layoutX="36.0" layoutY="30.0" onAction="#addNewRoom" prefHeight="39.0" prefWidth="176.0" style="-fx-background-color: #45D6C5; -fx-background-radius: 1em;" text="ADD NEW ROOM" textFill="WHITE">
+               <font>
+                  <Font name="Calibri Bold" size="15.0" />
+               </font></JFXButton>
+            <Label layoutX="186.0" layoutY="31.0" text="+" textFill="WHITE">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </Label>
+            <JFXButton buttonType="RAISED" layoutX="288.0" layoutY="31.0" onAction="#openAllRoom" prefHeight="39.0" prefWidth="176.0" style="-fx-background-color: #45D6C5; -fx-background-radius: 1em;" text="MODIFY ROOM" textFill="WHITE">
+               <font>
+                  <Font name="Calibri Bold" size="15.0" />
+               </font>
+            </JFXButton>
+            <JFXButton buttonType="RAISED" layoutX="537.0" layoutY="30.0" onAction="#openRoomToDelete" prefHeight="39.0" prefWidth="176.0" style="-fx-background-color: #45D6C5; -fx-background-radius: 1em;" text="DELET ROOM" textFill="WHITE">
+               <font>
+                  <Font name="Calibri Bold" size="15.0" />
+               </font>
+            </JFXButton>
+            <FontAwesomeIconView fill="WHITE" glyphName="EDIT" layoutX="435.0" layoutY="57.0" size="18" />
+            <FontAwesomeIconView fill="WHITE" glyphName="TRASH_ALT" layoutX="682.0" layoutY="55.0" size="20" />
+            <ImageView fitHeight="131.0" fitWidth="176.0" layoutX="36.0" layoutY="104.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/Superior.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="131.0" fitWidth="176.0" layoutX="288.0" layoutY="104.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/Paranomic.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="131.0" fitWidth="176.0" layoutX="537.0" layoutY="104.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/Luxury.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="131.0" fitWidth="176.0" layoutX="36.0" layoutY="269.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/PanaromicTwin.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="131.0" fitWidth="176.0" layoutX="288.0" layoutY="269.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/Dulux.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="131.0" fitWidth="176.0" layoutX="537.0" layoutY="269.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/Suite.jpg" />
+               </image>
+            </ImageView>
+            <JFXButton buttonType="RAISED" layoutX="79.0" layoutY="221.0" text="SUPERIOR" textFill="#0dc0ab">
+               <font>
+                  <Font name="Baskerville Old Face" size="14.0" />
+               </font>
+            </JFXButton>
+            <JFXButton buttonType="RAISED" layoutX="323.0" layoutY="221.0" text="PANORAMIC" textFill="#0dc0ab">
+               <font>
+                  <Font name="Baskerville Old Face" size="14.0" />
+               </font>
+            </JFXButton>
+            <JFXButton buttonType="RAISED" layoutX="586.0" layoutY="221.0" text="LUXURY" textFill="#0dc0ab">
+               <font>
+                  <Font name="Baskerville Old Face" size="14.0" />
+               </font>
+            </JFXButton>
+            <JFXButton buttonType="RAISED" layoutX="50.0" layoutY="386.0" text="PANORAMIC TWIN" textFill="#0dc0ab">
+               <font>
+                  <Font name="Baskerville Old Face" size="14.0" />
+               </font>
+            </JFXButton>
+            <JFXButton buttonType="RAISED" layoutX="337.0" layoutY="386.0" text="DELUXE" textFill="#0dc0ab">
+               <font>
+                  <Font name="Baskerville Old Face" size="14.0" />
+               </font>
+            </JFXButton>
+            <JFXButton buttonType="RAISED" layoutX="595.0" layoutY="386.0" text="SUITE" textFill="#0dc0ab">
+               <font>
+                  <Font name="Baskerville Old Face" size="14.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </AnchorPane>
+      <Label layoutX="86.0" layoutY="11.0" prefHeight="31.0" prefWidth="233.0" text="ROOMS" textFill="WHITE">
+         <font>
+            <Font name="Baskerville Old Face" size="25.0" />
+         </font>
+      </Label>
+      <Label layoutX="86.0" layoutY="35.0" prefHeight="18.0" prefWidth="258.0" text="BLUE OCEAN RESERVETION SYSTEM" textFill="WHITE">
+         <font>
+            <Font name="Baskerville Old Face" size="14.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="39.0" fitWidth="59.0" layoutX="13.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/smalllo.jpg" />
+         </image>
+      </ImageView>
+      <JFXButton buttonType="RAISED" layoutX="16.0" layoutY="559.0" onAction="#back" prefHeight="25.0" prefWidth="81.0" style="-fx-background-color: linear-gradient(to left,#0CC0AB, #8AF5FC); -fx-background-radius: 0.5em;" text="Back">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </JFXButton>
+      <FontAwesomeIconView glyphName="ANGLE_LEFT" layoutX="30.0" layoutY="578.0" size="20" />
+   </children>
+</AnchorPane>

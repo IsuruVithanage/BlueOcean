@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+
+<StackPane fx:id="stackPane" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.SignUpWindowController">
+   <children>
+      <AnchorPane fx:id="contextSign" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: linear-gradient(#0CC0AB, #8AF5FC);">
+         <children>
+            <AnchorPane layoutX="226.0" layoutY="22.0" prefHeight="357.0" prefWidth="360.0" style="-fx-background-color: white; -fx-background-radius: 2em;">
+               <children>
+                  <JFXTextField fx:id="username" focusColor="#0cc0ab" labelFloat="true" layoutX="63.0" layoutY="83.0" opacity="0.65" prefHeight="31.0" prefWidth="253.0" promptText="Username" style="-fx-background-color: #b9fff6;" unFocusColor="#b9fff6">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </JFXTextField>
+                  <FontAwesomeIconView glyphName="LOCK" layoutX="38.0" layoutY="197.0" size="22" />
+                  <JFXButton buttonType="RAISED" layoutX="29.0" layoutY="307.0" onAction="#newAdminOnAction" prefHeight="25.0" prefWidth="124.0" style="-fx-background-color: linear-gradient(#0CC0AB, #8AF5FC); -fx-background-radius: 0.5em;" text="Add as an Admin" />
+                  <JFXButton buttonType="RAISED" layoutX="180.0" layoutY="307.0" onAction="#newReceptionistOnAction" prefHeight="25.0" prefWidth="154.0" style="-fx-background-color: linear-gradient(#0CC0AB, #8AF5FC); -fx-background-radius: 0.5em;" text="Add as an Receptionist" />
+                  <ImageView fitHeight="59.0" fitWidth="87.0" layoutX="137.0" layoutY="12.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../assets/smalllo.jpg" />
+                     </image>
+                  </ImageView>
+                  <FontAwesomeIconView glyphName="LOCK" layoutX="39.0" layoutY="241.0" size="22" />
+                  <JFXTextField fx:id="email" focusColor="#0cc0ab" labelFloat="true" layoutX="62.0" layoutY="129.0" opacity="0.65" prefHeight="31.0" prefWidth="253.0" promptText="Email" style="-fx-background-color: #b9fff6;" unFocusColor="#b9fff6">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </JFXTextField>
+                  <FontAwesomeIconView glyphName="ENVELOPE" layoutX="38.0" layoutY="150.0" size="17" />
+                  <FontAwesomeIconView glyphName="USER" layoutX="39.0" layoutY="105.0" size="20" />
+                  <JFXTextField fx:id="contact" focusColor="#0cc0ab" labelFloat="true" layoutX="62.0" layoutY="262.0" opacity="0.65" prefHeight="31.0" prefWidth="253.0" promptText="Contact Number" style="-fx-background-color: #b9fff6;" unFocusColor="#b9fff6">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </JFXTextField>
+                  <FontAwesomeIconView glyphName="PHONE" layoutX="41.0" layoutY="284.0" size="20" />
+                  <JFXPasswordField focusColor="#0cc0ab" labelFloat="true" layoutX="62.0" layoutY="175.0" opacity="0.65" prefHeight="31.0" prefWidth="253.0" promptText="Password" style="-fx-background-color: #b9fff6;" unFocusColor="#b9fff6">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </JFXPasswordField>
+                  <JFXPasswordField fx:id="password" focusColor="#0cc0ab" labelFloat="true" layoutX="63.0" layoutY="218.0" opacity="0.65" prefHeight="31.0" prefWidth="253.0" promptText="Confirm Password" style="-fx-background-color: #b9fff6;" unFocusColor="#b9fff6">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font></JFXPasswordField>
+               </children>
+            </AnchorPane>
+            <Label layoutX="55.0" layoutY="22.0" prefHeight="30.0" prefWidth="109.0" text="WELCOME" textFill="WHITE">
+               <font>
+                  <Font name="Baskerville Old Face" size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="12.0" layoutY="43.0" prefHeight="18.0" prefWidth="200.0" text="BLUE OCEAN RESERVETION SYSTEM" textFill="WHITE">
+               <font>
+                  <Font name="Baskerville Old Face" size="11.0" />
+               </font>
+            </Label>
+            <AnchorPane layoutX="46.0" layoutY="107.0" prefHeight="141.0" prefWidth="124.0" style="-fx-background-color: #c0fff4; -fx-background-radius: 1em;">
+               <children>
+                  <FontAwesomeIconView glyphName="USER" layoutX="35.0" layoutY="95.0" size="70" />
+               </children>
+            </AnchorPane>
+            <JFXButton buttonType="RAISED" layoutX="50.0" layoutY="263.0" prefHeight="25.0" prefWidth="117.0" style="-fx-background-color: linear-gradient(#0CC0AB, #8AF5FC); -fx-background-radius: 0.5em;" text="Browse" />
+         </children>
+      </AnchorPane>
+   </children>
+</StackPane>
